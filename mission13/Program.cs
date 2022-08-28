@@ -6,15 +6,27 @@
 
 // 32679 -> 6
 
+// Через массив
+
+// Console.WriteLine("Введите число: ");
+// string num = Console.ReadLine();
+// char[] array = num.ToArray();
+// int LenghtArray = array.Length;
+
+// if (LenghtArray>2)
+// {
+//     Console.WriteLine(array[2]);
+// }
+// else {
+//     Console.WriteLine("Третьей цифры нет.");
+// }
+
+// через строку
+
 Console.WriteLine("Введите число: ");
 string num = Console.ReadLine();
-char[] array = num.ToArray();
-int LenghtArray = array.Length;
-
-if (LenghtArray>2)
+if(num.Length<=2)
 {
-    Console.WriteLine(array[2]);
-}
-else {
     Console.WriteLine("Третьей цифры нет.");
 }
+Console.WriteLine(num[2]);
