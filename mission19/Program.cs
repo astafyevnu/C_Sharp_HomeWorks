@@ -10,18 +10,18 @@
 // 01234
 
 Console.Write("Введите пятизначное число: ");
-string num = Console.ReadLine();
-int length = num.Length;
+int num = Convert.ToInt32(Console.ReadLine());
+string result = Convert.ToString(num);
 
-if (num[0] == num[4] && num[1] == num[3])
+if(num>=10000 && num<100000)
 {
-    Console.WriteLine("Число - полиндромом");
-}
-else if (length < 5 || length > 5)
-{
-    Console.WriteLine("Вы ввели непятизначное число");
-}
-else
-{
-    Console.WriteLine("Число - не полиндромом");
-}
+    if (result[0] == result[4] && result[1] == result[3])
+    {
+        Console.WriteLine("Число - полиндромом");
+    }
+    else
+    {
+        Console.WriteLine("Число - не полиндромом");
+    }}
+else {
+    Console.WriteLine("Вы ввели непятизначное число");}
